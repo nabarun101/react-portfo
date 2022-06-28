@@ -1,0 +1,140 @@
+*{
+  box-sizing: border-box;
+}
+
+:root{
+  --backy:linear-gradient(to left,rgb(47, 127, 255),rgb(178, 176, 252));
+}
+.outer{
+  background-color: #fff;
+  padding: 20px;
+}
+.inner{
+  width: 80rem;
+  margin: 0 auto;
+}
+
+.headtext{
+  text-align: center;
+  background:var(--backy);
+  color: #fff;
+  font-size: 1.5rem;
+  padding: 5px;
+}
+.headpara{
+  text-align: center;
+  background:var(--backy);
+  color: #fff;
+  font-size: 1.2rem;
+  padding-bottom: 5px;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.flex-container{
+  list-style-type: none;
+}
+
+.linkme{
+ background-color:#fff;
+ display: block;
+ text-align: center;
+ padding: 15px;
+}
+
+.linkme button{
+  outline: none;
+  border-radius: 6px;
+  padding: 4px 20px;
+  font-size: 1.4rem;
+  color: #fff;
+  background:linear-gradient(to left,rgb(47, 127, 255),rgb(178, 176, 252));
+  cursor: pointer;
+  border: none;
+}
+.linkme button:hover{
+  background:rgb(47, 255, 85);
+  color:#514e4e;
+  transform: scale(1.1);
+  transition: all 0.2s ease-out;
+}
+
+/* For Card */
+
+.out-img{
+  overflow: hidden;
+  height:200px;
+  width: 200px;
+  border-radius: 20px;
+}
+
+.cards_img{
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  right:20px;
+  bottom:20px;
+}
+
+.para-cont{
+  background:#dff1ee;
+  margin-left: 20px;
+  border-radius: 15px;
+  width: 100%;
+}
+.cards_para{
+  padding: 20px;
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: 1.2rem;
+}
+
+.cards_img:hover{
+  transition: all 0.2s linear;
+  transform: scale(1.1);
+}
+
+.style-link{
+  text-decoration: none;
+  display: flex;
+  justify-content: start;
+  margin: 20px;
+  color: #000;
+}
+@media screen and (max-width:1323px){
+  .inner{
+    width: 100%;
+    margin: 0 auto;
+  }
+}
+
+@media screen and (max-width:681px){
+  .cards_img{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    right:20px;
+    bottom:20px;
+  }
+}
+
+@media screen and (max-width:960px){
+  .cards_img{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    right:10px;
+    bottom:10px;
+  }
+}
+@media screen and (max-width:660px){
+  .cards_img{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    right:20px;
+    bottom:20px;
+  }
+}
